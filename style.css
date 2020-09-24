@@ -1,0 +1,136 @@
+body{
+    background: #141414;
+    font-family: 'Arsenal', sans-serif;
+    color: #141414;
+}
+
+header{
+    margin: 20px;
+}
+
+#page-title{
+    font-family: 'Black Ops One', cursive;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+#sponsor{
+    color: #fff;
+    font-family: 'Peddana', serif;
+    letter-spacing: 2px;
+}
+
+.player-1, .player-2{
+    width: 100%;
+    height: 350px;
+    background: #fff;
+    padding: 15px 5px;
+}
+
+.player-name{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.score{
+    color: red;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin: 30px 0;
+}
+
+.active{
+    background: #f7f7f7;
+}
+
+.circle:before {
+    content: ' \25CF';
+    font-size: 22px;
+    color: red;
+}
+
+.current-score{
+    background: #EB4D4D;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.current-score-number{
+    letter-spacing: 1px;
+}
+
+.controls{
+    background: #30BEBF;
+    padding: 20px;
+}
+
+.controls i{
+    margin-right: 5px;
+}
+
+.controls i:hover{
+    color: #f7f7f7;
+    letter-spacing: 1px;
+}
+
+.controls button{
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.controls button:focus{
+    outline: none;
+}
+
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+@media only screen and (max-width: 401px){
+    #page-title{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 385px){
+    .player-name{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    #page-title{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .dice{
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .dice{
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .dice{
+        height: 70px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width:422px){
+    .dice{
+        top: 250px;
+    }
+}

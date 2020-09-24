@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gill Marry Dice game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Peddana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/dice.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="text-center" id="page-title">
+                Gill Marry Dice
+            </h1>
+            <h5 class="text-center" id="sponsor">
+                sponsored by: Gill Marry
+            </h5>
+        </div>
+    </header>
+
+    <main>
+           <div class="container">
+               <div class="row no-gutters">
+                    <div class="col no-gutters">
+                        <div class="player-1 active">
+                            <h2 class="player-name text-center">
+                                player 1
+                                <span class="circle" id="circle-player1"></span>
+                            </h2>
+                            <div class="score text-center player-1-score">
+                                0
+                            </div>
+                            <div class="text-center">
+                                <div class="current-score text-center">
+                                    <h5 class="text-uppercase" style="color: #fff; letter-spacing: 2px;">current</h5>
+                                    <div style="color: #fff;">
+                                        <h3 class="current-score-number current-score-number-player-1">
+                                            0
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col no-gutters">
+                        <div class="player-2">
+                            <h2 class="player-name text-center">
+                                player 2
+                                <span class="circle" id="circle-player2"></span>
+                            </h2>
+                            <div class="score text-center player-2-score">
+                                0
+                            </div>
+                            <div class="text-center">
+                                <div class="current-score">
+                                    <h5 class="text-center text-uppercase" style="color: #fff; letter-spacing: 2px;">current</h5>
+                                    <div style="color: #fff;">
+                                        <h3 class="current-score-number current-score-number-player-2">
+                                            0
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+               </div>
+
+               <div class="controls text-center">
+                   <div class="control-buttons">
+                        <span>
+                            <button id="new_game" name="new_game">
+                                <i class="fas fa-plus-circle">
+                                    new game
+                                </i>
+                            </button>
+                        </span>
+                        <span>
+                            <button id="roll_dice" name="roll_dice">
+                                <i class="fas fa-dice-two">
+                                    roll dice
+                                </i>
+                            </button>
+                        </span>
+                        <span>
+                            <button id="switch" name="switch">
+                                <i class="fas fa-exchange-alt">
+                                    switch
+                                </i>
+                            </button>
+                        </span>
+                   </div>
+
+                   <div class="winner">
+                        <h4 class="text-center winner-text" style="color: #fff;">
+                        </h4>
+                        <span>
+                            <button id="new_game" name="new_game">
+                                <i class="fas fa-plus-circle">
+                                    new game
+                                </i>
+                            </button>
+                        </span>
+                   </div>
+
+               </div>
+           </div>
+    </main>
+
+    <footer class="mt-3 mb-3">
+        <div class="container">
+            <img src="./images/gillmarry.jpeg" alt="gillmarry" class="img-fluid">
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
